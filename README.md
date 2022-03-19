@@ -1,1 +1,1 @@
-# combinatorialOptimizationProject
+# Combinatorial Optimization Project
