@@ -24,4 +24,4 @@ def solve_bp_lp(instance_name):
     instance.close()
     return data_file
 
-data_file = solve_bp_lp("./bin_pack_110_2.dat")
+data_file = solve_bp_lp("./bin_pack_20_1.dat")
