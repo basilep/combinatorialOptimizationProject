@@ -1,8 +1,13 @@
 def get_products_parameter(all_products):
     result_dictionnary = {}
+    print(all_products)
     for elem in all_products:
         tmp = elem.split(" ")
-        result_dictionnary[tmp[4]] = tmp[5][:len(tmp[5])-1]
+        if(";" in elem):
+            result_dictionnary[int(tmp[4])] = int(tmp[5][:len(tmp[5])-2])
+        else:
+            result_dictionnary[int(tmp[4])] = int(tmp[5][:len(tmp[5])-1])
+        
     return result_dictionnary
 
 def solve_bp_lp(instance_name):
