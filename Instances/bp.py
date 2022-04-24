@@ -159,7 +159,7 @@ for instance in instances:
     result_set[i]["time"] = round(time_after-time_before, 2)
     i+=1
 df = pandas.DataFrame(result_set, columns=['file', 'c', 'n', 'lb', 'solution', 'result', 'time'])
-display(df)
+print(df.to_string())
 f = open("result.txt", "a")
-f.write(str(df))
+f.write(df.to_string())
 f.close()
