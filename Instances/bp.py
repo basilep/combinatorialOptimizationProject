@@ -113,7 +113,7 @@ def solve_bp_lp(instance_name):
         model.product_in_only_one_box.add(lhs == rhs)
 
     #Solver
-    solver.solve(model, timelimit=600)    #To get the details : tee=True
+    solver.solve(model, timelimit=10)    #To get the details : tee=True
     try:
         #Results
         obj = pe.value(model.obj)
@@ -136,6 +136,14 @@ if "result.txt" in instances:
     instances.remove("result.txt")
 if "details.txt" in instances:
     instances.remove("details.txt")
+if "BFD.py" in instances:
+    instances.remove("BFD.py")
+if "opentool.py" in instances:
+    instances.remove("opentool.py")
+if "test.txt" in instances:
+    instances.remove("test.txt")
+    
+
 f = open("result.txt", "w")
 f.close()
 d = open("details.txt", "w")
