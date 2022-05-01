@@ -1,0 +1,82 @@
+                  file    c    n  lb   solution   result    time
+0   bin_pack_100_0.dat  150  100  40         43  success  601.33
+1   bin_pack_100_1.dat  150  100  41         45  success  600.93
+2   bin_pack_100_2.dat  150  100  41         43  success  600.53
+3   bin_pack_105_0.dat  150  105  42         44  success  600.49
+4   bin_pack_105_1.dat  150  105  43  not found     fail  600.39
+5   bin_pack_105_2.dat  150  105  43         45  success  600.51
+6   bin_pack_110_0.dat  150  110  44         46  success  600.60
+7   bin_pack_110_1.dat  150  110  45  not found     fail  600.45
+8   bin_pack_110_2.dat  150  110  45         48  success  603.79
+9   bin_pack_115_0.dat  150  115  46         48  success  600.59
+10  bin_pack_115_1.dat  150  115  47         50  success  600.55
+11  bin_pack_115_2.dat  150  115  47         49  success  600.61
+12  bin_pack_120_0.dat  150  120  48         51  success  602.28
+13  bin_pack_120_1.dat  150  120  49  not found     fail  602.16
+14  bin_pack_120_2.dat  150  120  49         52  success  600.60
+15  bin_pack_125_0.dat  150  125  50         53  success  602.26
+16  bin_pack_125_1.dat  150  125  51  not found     fail  600.50
+17  bin_pack_125_2.dat  150  125  51         54  success  600.69
+18  bin_pack_130_0.dat  150  130  52         55  success  603.82
+19  bin_pack_130_1.dat  150  130  53         56  success  600.69
+20  bin_pack_130_2.dat  150  130  53         55  success  600.71
+21  bin_pack_135_0.dat  150  135  54         57  success  602.36
+22  bin_pack_135_1.dat  150  135  55         58  success  600.78
+23  bin_pack_135_2.dat  150  135  55         58  success  600.82
+24  bin_pack_140_0.dat  150  140  56         59  success  601.22
+25  bin_pack_140_1.dat  150  140  57  not found     fail  600.88
+26  bin_pack_140_2.dat  150  140  57         61  success  600.85
+27  bin_pack_145_0.dat  150  145  58         61  success  600.97
+28  bin_pack_145_1.dat  150  145  59         62  success  600.93
+29  bin_pack_145_2.dat  150  145  59         62  success  600.90
+30  bin_pack_150_0.dat  150  150  60         63  success  600.95
+31  bin_pack_150_1.dat  150  150  61         65  success  602.60
+32  bin_pack_150_2.dat  150  150  61         66  success  600.90
+33   bin_pack_20_0.dat  150   20   9          9  success    0.07
+34   bin_pack_20_1.dat  150   20   9          9  success    0.08
+35   bin_pack_20_2.dat  150   20   9          9  success    0.07
+36   bin_pack_25_0.dat  150   25  11         11  success    0.09
+37   bin_pack_25_1.dat  150   25  11         11  success    0.13
+38   bin_pack_25_2.dat  150   25  11         11  success    0.10
+39   bin_pack_30_0.dat  150   30  13         13  success    0.13
+40   bin_pack_30_1.dat  150   30  13         13  success    0.18
+41   bin_pack_30_2.dat  150   30  13         13  success   12.65
+42   bin_pack_35_0.dat  150   35  15         15  success    0.23
+43   bin_pack_35_1.dat  150   35  15         15  success    0.15
+44   bin_pack_35_2.dat  150   35  15         15  success    0.24
+45   bin_pack_40_0.dat  150   40  17         18  success  600.11
+46   bin_pack_40_1.dat  150   40  17         17  success  155.89
+47   bin_pack_40_2.dat  150   40  17         17  success    3.33
+48   bin_pack_45_0.dat  150   45  19         19  success    4.39
+49   bin_pack_45_1.dat  150   45  19  not found     fail  600.09
+50   bin_pack_45_2.dat  150   45  19  not found     fail  600.10
+51   bin_pack_50_0.dat  150   50  20         21  success  600.17
+52   bin_pack_50_1.dat  150   50  21  not found     fail  600.10
+53   bin_pack_50_2.dat  150   50  21  not found     fail  600.13
+54   bin_pack_55_0.dat  150   55  22         23  success  601.77
+55   bin_pack_55_1.dat  150   55  23  not found     fail  600.13
+56   bin_pack_55_2.dat  150   55  23  not found     fail  600.14
+57   bin_pack_60_0.dat  150   60  24         25  success  600.29
+58   bin_pack_60_1.dat  150   60  25         26  success  600.22
+59   bin_pack_60_2.dat  150   60  25         26  success  600.18
+60   bin_pack_65_0.dat  150   65  26         28  success  600.24
+61   bin_pack_65_1.dat  150   65  27  not found     fail  600.19
+62   bin_pack_65_2.dat  150   65  27         29  success  600.29
+63   bin_pack_70_0.dat  150   70  28         29  success  600.36
+64   bin_pack_70_1.dat  150   70  29  not found     fail  600.44
+65   bin_pack_70_2.dat  150   70  29  not found     fail  600.18
+66   bin_pack_75_0.dat  150   75  30         32  success  600.33
+67   bin_pack_75_1.dat  150   75  31         33  success  600.28
+68   bin_pack_75_2.dat  150   75  31  not found     fail  600.55
+69   bin_pack_80_0.dat  150   80  32         34  success  600.36
+70   bin_pack_80_1.dat  150   80  33         35  success  601.94
+71   bin_pack_80_2.dat  150   80  33  not found     fail  600.21
+72   bin_pack_85_0.dat  150   85  34         36  success  600.38
+73   bin_pack_85_1.dat  150   85  35         37  success  600.36
+74   bin_pack_85_2.dat  150   85  35  not found     fail  600.33
+75   bin_pack_90_0.dat  150   90  36         39  success  600.42
+76   bin_pack_90_1.dat  150   90  37         39  success  600.41
+77   bin_pack_90_2.dat  150   90  37         39  success  600.38
+78   bin_pack_95_0.dat  150   95  38         41  success  600.44
+79   bin_pack_95_1.dat  150   95  39  not found     fail  600.31
+80   bin_pack_95_2.dat  150   95  39         41  success  601.30
