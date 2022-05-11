@@ -175,7 +175,7 @@ def test(capacity, product, node_actuel):
 
 total_result = []
 
-get_child_info(100, [49, 41, 34, 33, 29, 26, 26, 22, 20, 19], [])
+#get_child_info(100, [49, 41, 34, 33, 29, 26, 26, 22, 20, 19], [])
 
 min_boxes = 10 #Changer en len(product) par la suite
 supp = []
@@ -193,4 +193,43 @@ for elem in total_result:
         print(len(elem))
 
 
-print(len(total_result))
+def compute_lb3(capacity,product_list,node):
+    wj=[]
+    # Gets all the products in the problem
+    wj = get_all_products(product_list, node)
+
+    max_lb=0
+    wj_min = [i for i in wj if i <capacity/2]
+
+    for alpha in wj_min:
+        j1_bound=capacity-alpha
+        j2_bound=capacity/2
+        j3_bound=alpha
+        j1=[]
+        j2=[]
+        j3=[]
+    
+        for product in wj:
+            if product>j1_bound:
+                j1.append(product)
+            elif product>j2_bound and product <=j1_bound:
+                j2.append(product)
+            elif product>=j3_bound and product <=j2_bound:
+                j3.append(product)
+ 
+        lb=len(j1)+len(j2)+max(0,(sum(j3)-(len(j2)*capacity-sum(j2)))/capacity)
+        max_lb=max(max_lb,math.ceil(lb))
+        
+    return max_lb
+
+def get_all_products(product_list, node):
+    products = []
+    for sac in node:
+        for product in sac:
+            products.append(product)
+
+    for product in product_list:
+        products.append(product)
+    return products
+    
+print(compute_lb3(100, [34, 33, 29, 26, 26, 22, 20, 19], [[49], [41]]))
